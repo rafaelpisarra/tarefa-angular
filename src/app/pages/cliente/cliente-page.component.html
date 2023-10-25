@@ -1,0 +1,17 @@
+<div>
+    Clientes:
+</div>
+
+
+<ul *ngFor="let valor of valores">
+    <li>{{valor.id}} - {{valor.nome}} - {{valor.descricao}}</li>   
+</ul>
+<label>Digite um nome</label>
+<input [(ngModel)]="nome" />
+<button (click)="adicionar()">adicionar item</button> 
+
+<br/>
+<br/>
+<hr/>
+<br/>
+<a [routerLink]="['/cliente/visualizacao']"> Visualizar cliente (submodulo)</a> 
